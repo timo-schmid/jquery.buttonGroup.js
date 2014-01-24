@@ -21,10 +21,8 @@
 				return false;
 			}
 		}
-		var root = $('<div class="form-group text-center"></div>');
 		var btnGroup = $('<div class="btn-group"></div>');
-		root.append(btnGroup);
-		input.after(root);
+		input.after(btnGroup);
 		$.each(data, function(k, v) {
 			var button = $('<button type="button" class="btn btn-default">' + v + '</button>');
 			button.click(function() {
